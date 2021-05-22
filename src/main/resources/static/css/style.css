@@ -1,0 +1,230 @@
+@charset "UTF-8";
+.grey-bg {
+  background-color: #f2f2f2;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: #000000;
+  font: 14px "Open Sans", sans-serif;
+  text-align: center;
+}
+.tile {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 10px 1px 20px 4px rgba(25, 28, 32, 0.9);
+  float: left;
+  transform-style: preserve-3d;
+  margin: 10px 5px;
+}
+.header {
+  border-bottom: 1px solid #24272a;
+  padding: 19px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 600;
+  font-size: 15px;
+  position: relative;
+}
+.banner-img {
+  padding: 5px 5px 0;
+  text-align: right;
+}
+.banner-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+.dates {
+  border: 1px solid #24272a;
+  border-radius: 5px;
+  padding: 20px 0px;
+  margin: 10px 20px;
+  font-size: 16px;
+  color: #5aadef;
+  font-weight: 600;
+  overflow: auto;
+}
+.dates div {
+  float: left;
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+.dates strong,
+.stats strong {
+  display: block;
+  color: #adb8c2;
+  font-size: 11px;
+  font-weight: 700;
+}
+.dates span {
+  width: 5px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #24272a;
+}
+.stats {
+  background: #24272a;
+  overflow: auto;
+  padding: 15px 0;
+  font-size: 16px;
+  color: #59687f;
+  font-weight: 600;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 10px 5px 10px;
+}
+.stats div {
+  border-right: 3px solid #191c20;
+  width: 33.33333%;
+  float: left;
+  text-align: center;
+}
+
+.stats div:nth-of-type(3) {
+  border: none;
+}
+
+div.footer {
+  text-align: right;
+  position: relative;
+  margin: 20px 5px;
+}
+
+div.footer a.Cbtn {
+  padding: 10px 25px;
+  background-color: #dadada;
+  color: #666;
+  margin: 10px 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+/*BOTAO DOS CARDS - RESERVAR - EDITAR - CANCELAR | TODOS OS CARDS C/ BTNS*/
+div.footer a.Cbtn-reservar {
+  background-color: #47a460;
+  color: #fff;
+}
+div.footer a.Cbtn-reservar:hover {
+  background-color: #47a430;
+  color: #f2f2f2;
+}
+div.footer a.Cbtn-editar {
+  background-color: #ed9c40;
+  color: #fff;
+}
+div.footer a.Cbtn-editar:hover {
+  background-color: #ed9c10;
+  color: #f2f2f2;
+}
+div.footer a.Cbtn-cancelar {
+  background-color: #d53f4a;
+  color: #fff;
+}
+div.footer a.Cbtn-cancelar:hover {
+  background-color: #d53f2a;
+  color: #f2f2f2;
+}
+
+/*BTN NAV BAR LOCALIZAR - ENVIAR | BTNS FORM AÇÕES DIFERENTES*/
+div.footer a.Cbtn-Localizar {
+  background-color:#59687f ;
+  color: #adb8c2;
+}
+div.footer a.Cbtn-reservar:hover {
+  background-color: #47a430;
+  color: #f2f2f2;
+}
+
+div.row {
+  background-color: #2e2f32;
+}
+div.tile {
+  background-color: #191c20;
+}
+div.header {
+  color: #adb8c2;
+}
+div.header h1.font-vinte-cinco {
+  font-size: 20px;
+  color: #666;
+  font-weight: bold;
+}
+
+/*STATUS DE OCUPADO - RESERVADO - FECHADO | TOPO DO CARD*/
+div.header h1.status-ocupado {
+  color: #ed9c28;
+}
+div.header h1.status-reservado {
+  color: #47a447;
+}
+div.header h1.status-fechado {
+  color: #d53f3a;
+}
+
+/*STATUS DE BANNER OCUPADO - RESERVADO - FECHADO | ABAIXO DO BANNER ROOM*/
+div.banner-img-ocupado h1 {
+  color: #59687f;
+}
+div.banner-img-reservado h1 {
+  color: #59687f;
+}
+div.banner-img-fechado h1 {
+  color: #59687f;
+}
+div.banner-img-manutencao {
+  padding: 5px 5px 0;
+  text-align: right;
+  background-image: url(../img/room-manutencao.png);
+  background-size: 100%;
+  margin: 10px 20px 0 20px;
+  border-radius: 25px;
+  padding: 0 30px 0 30px;
+}
+div.banner-img-ocupado {
+  padding: 5px 5px 0;
+  text-align: right;
+  background-image: url(../img/room-ocupado.png);
+  background-size: 100%;
+  margin: 10px 20px 0 20px;
+  border-radius: 25px;
+  padding: 0 30px 0 30px;
+}
+div.banner-img-reservado {
+  padding: 5px 5px 0;
+  text-align: right;
+  background-image: url(../img/room-reservado.png);
+  background-size: 100%;
+  margin: 10px 20px 0 20px;
+  border-radius: 25px;
+  padding: 0 30px 0 30px;
+}
+div.banner-img-fechado {
+  padding: 5px 5px 0;
+  text-align: right;
+  background-image: url(../img/room-fechado.png);
+  background-size: 100%;
+  margin: 10px 20px 0 20px;
+  border-radius: 25px;
+  padding: 0 30px 0 30px;
+}
+
+/*STATUS DE CHECK-IN - CHECK-OUT | ABAIXO DO BANNER ROOM*/
+div.dates .check-in-reserva {
+  color: #47a447;
+}
+div.dates .check-out-saida {
+  color: #d53f3a;
+}
+
+/*BORDA DO FORMULARIO*/
+div.pos-f-t input.form-control {
+  border-color: #59687f;
+  color: #59687f;
+}

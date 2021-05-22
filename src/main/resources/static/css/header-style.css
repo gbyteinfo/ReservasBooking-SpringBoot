@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+nav{
+	height: 75px;
+}
+.navbar a{
+	cursor: pointer;
+	font-weight: bold;
+	color:#fff;
+}
+
+/*INICIO SECTION HOME STYLE */
+.home-section{
+	min-height: 700px;
+	background-size: cover !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding: 30px;
+	position: relative;
+}
+.texto-left{width:50%; float: left}
+.texto-right{width:50%; float: right;}
+.center{text-align: center;
+}
+.home-container{
+	max-width: 1280px; padding: 2% 2%; margin: 0 auto;
+}
+/*FIM SECTION HOME*/
