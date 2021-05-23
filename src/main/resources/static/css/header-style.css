@@ -65,8 +65,7 @@ nav{
 .texto-centro{
 	color:#e6e6e6;
 	font-size:3em; 
-	font-family: 'Fjalla One'; 
-	font-weight: bold;
+	font-family: 'Bebas Neue'; 
 }
 .btn-home{
 	width: 280px;
@@ -82,7 +81,7 @@ nav{
 }
 
 .botoes{padding: 2% 15%}
-.rodape{color: #e6e6e6; padding: 5px 0px; background-color: #00070F}
+.rodape{color: #b3b3b3; padding: 5px 0px; background-color: #00070F}
 /*FIM SECTION HOME*/
 
 /* RESPONSIVIDADE, QUANDO O NAVEGADOR CHEGAR NO TAMANHO MAX-WIDTH xxxx*/
