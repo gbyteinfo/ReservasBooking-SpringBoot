@@ -6,7 +6,7 @@ nav{
 .navbar a{
 	cursor: pointer;
 	color: #e6e6e6;
-	font-family: 'Fjalla One'; 
+	font-family: 'Fjalla One';
 }
 
 .btn-link-menu{
@@ -84,6 +84,19 @@ nav{
 .botoes{padding: 2% 15%}
 .rodape{color: #e6e6e6; padding: 5px 0px; background-color: #00070F}
 /*FIM SECTION HOME*/
+
+/* RESPONSIVIDADE, QUANDO O NAVEGADOR CHEGAR NO TAMANHO MAX-WIDTH xxxx*/
+@media screen and (max-width:991px){
+	.texto-left{width: 100%; margin-bottom: 10px}
+	nav{height: 100%; text-align: left !important;}
+	.home-container{margin-top:120px; }
+	.navbar-brand{margin-bottom: 10px}
+	.navbar a{
+	cursor: pointer;
+	color: #e6e6e6;
+	font-family: 'Fjalla One';
+}
+}
 
 
 
