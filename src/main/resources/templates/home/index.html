@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-brc" xmlns:th="http://www.thymeleaf.org">
+<html lang="pt-br" xmlns:th="http://thymeleaf.org">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,6 +17,7 @@
 
 	
 	
+	<div th:replace="fragmentos/fragmentos :: cabecalho"></div>
 	
 	<!-- INICIO CONTENT -->
 	<section class="home-section" style="background-image: url('img/backg-home.jpg');">
@@ -37,7 +38,7 @@
 	<!-- FIM CONTENT -->
 	
 	
-	
+	<div th:replace="fragmentos/fragmentos :: rodape"></div>
 	
 <!-- INICIO jQuery 3.6.0 / Bootstrap JS -->
 <script type="text/javascript" src="/webjars/jquery/3.6.0/jquery.slim.min.js"></script>

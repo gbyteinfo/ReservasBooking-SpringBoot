@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-brc" xmlns:th="http://www.thymeleaf.org">
+<html lang="pt-br" xmlns:th="http://thymeleaf.org">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,7 +18,7 @@
 
 
 <!-- INICIO CABEÇALHO -->
-<header>
+<header th:fragment="cabecalho">
 	<!-- INICIO DO NAV BAR -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<!-- INICIO LOGO -->
@@ -48,7 +48,7 @@
 
 <!-- INICIO FOOTER -->
 <footer>
-	<div class="rodape">
+	<div class="rodape" th:fragment="rodape">
 		<span>Reservas.Booking - Desenvolvimento Jorge Mira</span>
 	</div>
 </footer>
