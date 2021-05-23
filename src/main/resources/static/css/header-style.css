@@ -1,12 +1,32 @@
 @charset "UTF-8";
 
 nav{
-	height: 75px;
+	height: 40px;
 }
 .navbar a{
 	cursor: pointer;
-	font-weight: bold;
-	color:#fff;
+	color: #e6e6e6;
+	font-family: 'Fjalla One'; 
+}
+
+.btn-link-menu{
+	color: #e6e6e6; 
+}
+.btn-link-menu:hover{
+	color: #b3b3b3; 
+}
+
+.btn-sair{
+	width: 100px;
+	border-radius: 10px;
+	color: #e6e6e6; 
+	border:2px solid #023489;	
+	background-color: rgba(2, 1, 0, 0.3);
+	padding: 2px 1px;
+	font-family: 'Fjalla One'; 
+}
+.btn-sair:hover{
+	color: #b3b3b3; 
 }
 
 /*INICIO SECTION HOME STYLE */
@@ -24,6 +44,46 @@ nav{
 .center{text-align: center;
 }
 .home-container{
-	max-width: 1280px; padding: 2% 2%; margin: 0 auto;
+	max-width: 1280px; 
+	padding: 2% 2%; 
+	margin: 0 auto;
+	margin-top: 75px;
 }
+.sombra{
+	width: 100%; 
+	height: 100%; 
+	top:0; 
+	left:0; 
+	position: absolute; 
+	background: rgba(0,0,0,0.7); 
+	z-index:100;
+}
+.home-section > .home-container{
+	position: relative;
+	z-index: 105;
+}
+.texto-centro{
+	color:#e6e6e6;
+	font-size:3em; 
+	font-family: 'Fjalla One'; 
+	font-weight: bold;
+}
+.btn-home{
+	width: 280px;
+	color: rgb(253, 254, 255, 0.2);
+	border-radius: 10px;
+	border:3px solid rgba(2, 1, 0, 0.3);
+	background-color: rgba(2, 1, 0, 0.3);
+	padding: 10px;
+}
+.btn-home:hover{
+	color:rgb(169, 169, 169, 1);
+	border:3px solid #023489;	
+}
+
+.botoes{padding: 2% 15%}
+.rodape{color: #e6e6e6; padding: 5px 0px; background-color: #00070F}
 /*FIM SECTION HOME*/
+
+
+
