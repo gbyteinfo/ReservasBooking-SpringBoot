@@ -15,38 +15,11 @@
 </head>
 <body>
 
-	<header>
-		<!-- INICIO DO NAV BAR -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<!-- INICIO LOGO -->
-			<a class="navbar-brand" th:href="@{/}">
-				#IMG_LOGO
-			</a>
-			<!-- FIM LOGO -->	
-			<!-- INICIO BTN MOBILE HAMBURGUER -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile">
-				<span class="navbar-toggler-icon" style="width: 20px; height: 20px"></span>			
-			</button>
-			<!-- FIM BTN MOBILE HAMBURGUER -->
-			<!-- INICIO MENU -->
-			<div id="navMobile" class="navbar-collapse collapse justify-content-end nav-mobileRecuoDoTop">
-				<a class="btn-nav btn-link-menu nav-item nav-link"><i class="fas fa-concierge-bell"></i> Reservar</a>
-				<a class="btn-nav btn-link-menu nav-item nav-link"><i class="fas fa-search"></i> Pesquisar Reservas</a>
-				<form action="/logout" method="post">
-					<button type="button" class="btn btn-sair"><i class="fas fa-times"></i> Sair</button>
-				</form>
-			</div>
-			<!-- FIM MENU -->		
-		</nav>
-		<!-- FIM NAV BAR -->
-	</header>
-	
 	
 	
 	
 	<!-- INICIO CONTENT -->
 	<section class="home-section" style="background-image: url('img/backg-home.jpg');">
-	
 			<div class="sombra"></div>
 			<div class="center home-container">
 				<h1 class="texto-centro">Booking de Reservas</h1>
@@ -60,24 +33,15 @@
 					<div class="clear"></div>
 				</div>
 			</div>
-			
 	</section>
-	<!-- INICIO CONTENT -->
+	<!-- FIM CONTENT -->
 	
-	<!-- INICIO FOOTER -->
-	<footer>
-		<div class="rodape">
-			<span>Reservas.Booking - Desenvolvimento Jorge Mira</span>
-		</div>
-	</footer>
-	<!-- FIM FOOTER -->
 	
-	<!-- INICIO jQuery 3.6.0 / Bootstrap JS -->
-	<script type="text/javascript"
-		src="/webjars/jquery/3.6.0/jquery.slim.min.js"></script>
-	<script type="text/javascript"
-		src="/webjars/bootstrap/js/bootstrap.min.js"></script>
-	<!-- FIM jQuery 3.6.0 / Bootstrap JS -->
-
+	
+	
+<!-- INICIO jQuery 3.6.0 / Bootstrap JS -->
+<script type="text/javascript" src="/webjars/jquery/3.6.0/jquery.slim.min.js"></script>
+<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+<!-- FIM jQuery 3.6.0 / Bootstrap JS -->
 </body>
 </html>

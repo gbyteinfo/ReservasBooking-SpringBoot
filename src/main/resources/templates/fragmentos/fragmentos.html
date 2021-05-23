@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-brc" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap 5.0.1 CSS-->
+<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Roboto+Condensed:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/006642858d.js"></script>
+<title>fragmentos</title>
+<meta name="author" content="Jorge Mira">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/header-style.css">
+</head>
+<body>
+
+
+
+<!-- INICIO CABEÇALHO -->
+<header>
+	<!-- INICIO DO NAV BAR -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<!-- INICIO LOGO -->
+		<a class="navbar-brand" th:href="@{/}">
+			#IMG_LOGO
+		</a>
+		<!-- FIM LOGO -->	
+		<!-- INICIO BTN MOBILE HAMBURGUER -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile">
+			<span class="navbar-toggler-icon" style="width: 20px; height: 20px"></span>			
+		</button>
+		<!-- FIM BTN MOBILE HAMBURGUER -->
+		<!-- INICIO MENU -->
+		<div id="navMobile" class="navbar-collapse collapse justify-content-end nav-mobileRecuoDoTop">
+			<a class="btn-nav btn-link-menu nav-item nav-link"><i class="fas fa-concierge-bell"></i> Reservar</a>
+			<a class="btn-nav btn-link-menu nav-item nav-link"><i class="fas fa-search"></i> Pesquisar Reservas</a>
+			<form action="/logout" method="post">
+				<button type="button" class="btn btn-sair"><i class="fas fa-times"></i> Sair</button>
+			</form>
+		</div>
+		<!-- FIM MENU -->		
+	</nav>
+	<!-- FIM NAV BAR -->
+</header>
+<!-- FIM CABEÇALHO -->
+
+
+<!-- INICIO FOOTER -->
+<footer>
+	<div class="rodape">
+		<span>Reservas.Booking - Desenvolvimento Jorge Mira</span>
+	</div>
+</footer>
+<!-- FIM FOOTER -->
+
+
+
+
+<!-- INICIO jQuery 3.6.0 / Bootstrap JS -->
+<script type="text/javascript" src="/webjars/jquery/3.6.0/jquery.slim.min.js"></script>
+<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+<!-- FIM jQuery 3.6.0 / Bootstrap JS -->
+</body>
+</html>
