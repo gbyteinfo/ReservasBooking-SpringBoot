@@ -21,19 +21,19 @@ public class Reserva {
 	@Column(name = "fone")
 	public String foneReserva;
 	
-	@Column(name = "reserva")
+	@Column(name = "dataReserva")
 	public String dataReserva;
 	
-	@Column(name = "chekin")
+	@Column(name = "dataChekin")
 	public String dataChegadaReserva;
 	
 	@Column(name = "quarto")
 	public QuartoReserva quartoReserva;
 	
-	@Column(name = "qtdPessoas")
+	@Column(name = "qutPessoas")
 	public String qtdPessoasReserva;
 	
-	@Column(name = "diaria")
+	@Column(name = "valorDiaria")
 	public String valorReserva;
 	
 	

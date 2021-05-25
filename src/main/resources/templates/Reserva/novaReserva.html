@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap 5.0.1 CSS-->
+<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Roboto+Condensed:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/006642858d.js"></script>
+<title>Nova Reserva</title>
+<meta name="author" content="Jorge Mira">
+
+<link rel="stylesheet" href="css/header-style.css">
+</head>
+<body>
+	
+	<div th:replace="fragmentos/fragmentos :: cabecalho"></div>
+		
+		<div class="container">
+			
+		<!--COMEÇO DA AREA UTIL DA NAVBAR, INICIO DO VOR-->
+          <form method="post" action="/InsertReservas" th:object="{reserva}">
+            <div class="form-row " >
+              <div class="form-group col-md-2">
+                <select id="inputSpinner" class="form-control bg-dark" style="border-color: #59687f; color: #adb8c2;" required>
+                  <option value="" disabled selected hidden>Status do quarto</option><!--FUXO  PARA DESABILITAR => FECHADO() => RESERVADO => OCUPADO-->
+                  <option value="manutencao" disabled>Manutenção</option>
+                  <option value="fechado">Fechado (Vago)</option>
+                  <option value="reservado">Reservado (Reserva)</option>
+                  <option value="ocupado">Ocupado (Check-in)</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                  <input id="inputNome" type="text" class="form-control bg-dark" placeholder="Nome Hospede" style="color: #adb8c2;" required>
+              </div>
+              <div class="form-group col-md-2">
+                <select id="inputQuarto" class="form-control bg-dark" style="border-color: #59687f; color: #adb8c2;" required>
+                  <option value="" disabled selected hidden>Selecione o quarto</option>
+                  <option value="201">AP. 201</option><!--DESABILITADO QUANDO RESERVADO E OCUPADO-->
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <input id="inputDiaria" type="text" class="form-control bg-dark" placeholder="Valor Diária"style="color: #adb8c2;" required>
+              </div>
+              <div class="form-group col-md-2">
+                <input id="inputQtdPessoas" type="text" class="form-control bg-dark" placeholder="Qtd. Pessoas"style="color: #adb8c2;" required>
+              </div>
+            </div>
+            <div class="form-row " >
+              <div class="col-auto">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text bg-dark" style="border: 1px solid #59687f; color:#59687f ;">
+                      <i class="bi bi-calendar-x-fill">check-in</i>
+                    </div>
+                  </div>
+                  <input id="inputDataCheckin" type="date" class="form-control bg-dark" required>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text bg-dark" style="border: 1px solid #59687f; color:#59687f;">
+                      <i class="bi bi-calendar-x-fill">check-out</i>
+                    </div>
+                  </div>
+                  <input id="inputDataCheckout" type="date" class="form-control bg-dark" required>
+                </div>
+              </div>
+            </div>
+            <div class="footer text-center">
+              <button type="submit" class="btn btn-secondary btn-lg" 
+              style="
+              text-transform: uppercase; 
+              color: #9facb9ce;
+              font-size: 12px; 
+              font-weight: bold; 
+              background-color:#59687f; 
+              border-color: #59687f;">
+
+              Reservar Quarto</button>
+              
+            </div>
+          </form>
+        <!--FIM DA AREA UTIL DA NAVBAR, INICIO DO VOR-->
+
+		</div>	
+<!-- INICIO jQuery 3.6.0 / Bootstrap JS -->
+<script type="/text/javascript" src="/webjars/jquery/3.6.0/jquery.slim.min.js"></script>
+<script type="/text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+<!-- FIM jQuery 3.6.0 / Bootstrap JS -->
+</body>
+</html>
